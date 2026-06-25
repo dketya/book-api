@@ -22,7 +22,7 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @GetMapping("/book")
+    @GetMapping("/book") 
     public String getBookByParam(@RequestParam("id") Integer id, Model model) {
         return getBook(id, model);
     }
